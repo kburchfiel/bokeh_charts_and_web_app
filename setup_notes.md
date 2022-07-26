@@ -11,3 +11,5 @@ c. https://www.kdnuggets.com/2020/09/flask-app-using-python-heroku.html (which p
 3. Including a Procfile was necessary. The template specified at https://www.kdnuggets.com/2020/09/flask-app-using-python-heroku.html worked for me. This template is also available at https://devcenter.heroku.com/articles/python-gunicorn ("web: gunicorn hello:app")
 
 4. I didn't create a virtual environment [although I probably should have], but I **did** need to define which libraries my code used within a requirements.txt file. Instead of using pip freeze > requirements.txt command, I just manually entered the several libraries that my code imported. (Other libraries got added in automatically during the deployment process.) I used the 'conda list' command within my main Conda environment to figure out which releases I needed to enter within requirements.txt, but it's possible that I didn't need to specify a release for each one.
+
+5. In my case, I needed to use git push heroku master instead of git push heroku main in order to deploy the app.
