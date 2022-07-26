@@ -24,6 +24,6 @@ def retrieve_t10_airports_by_pax_chart(name=None):
 
 @app.route('/t20_airports_by_avg_dist')
 def retrieve_t20_airports_by_avg_dist_chart(name=None):
-    return render_template('t10_airports_by_pax.html', name = name)
+    return render_template('t20_airports_by_avg_dist.html', name = name)
 
 
