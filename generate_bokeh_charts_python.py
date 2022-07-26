@@ -26,7 +26,7 @@ df_avg_dist_pivot.reset_index(drop=True,inplace=True)
 t20_airports_by_avg_dist = df_avg_dist_pivot.head(20)
 
 
-output_file('t10_airports_by_pax.html')
+output_file('templates/t10_airports_by_pax.html')
 cds_t10_pax_airports = ColumnDataSource(df_top_10_airports)
 
 tooltips = [
@@ -40,7 +40,7 @@ show(p) # Looks like this is the line that actually updates
 # the path passed to output_file with the chart
 
 
-output_file('t20_airports_by_avg_dist.html')
+output_file('templates/t20_airports_by_avg_dist.html')
 cds_t20_avg_dist = ColumnDataSource(t20_airports_by_avg_dist)
 
 tooltips = [
