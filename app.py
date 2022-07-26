@@ -1,7 +1,6 @@
 # Example Flask app
 # Source: https://flask.palletsprojects.com/en/2.1.x/quickstart/
-# Changed name to 'main' according to the directions shown in:
-# https://www.geeksforgeeks.org/deploy-python-flask-app-on-heroku/
+
 
 from flask import Flask, render_template
 
